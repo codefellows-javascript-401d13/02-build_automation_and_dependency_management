@@ -8,7 +8,7 @@ describe('Greeting Module',function() {
     it('should return hello cayla!', function(){
       var result = greet.sayHi('cayla');
       expect(greet).to.have.property('sayHi');
-      expect(result).to.equal('hello cayla!')
+      expect(result).to.equal('hello cayla!');
     });
 
     it('should throw a missing name name error', function(){
@@ -20,7 +20,7 @@ describe('Greeting Module',function() {
   describe('#sayBye', function(){
     it('should return see ya later!!', function(){
       var result = greet.sayBye();
-      expect(result).to.equal('see ya later!!')
+      expect(result).to.equal('see ya later!!');
     });
   });
 });
