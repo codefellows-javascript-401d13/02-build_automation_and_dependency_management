@@ -4,7 +4,7 @@
     "indent": [ "error", 2 ],
     "quotes": [ "error", "single" ],
     "semi": ["error", "always"],
-    "linebreak-style": [ "error", "unix" ],
+    "linebreak-style": [ "error", "unix"],
     "comma-dangle": ["error", "always-multiline"]
   },
   "env": {
