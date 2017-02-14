@@ -19,5 +19,15 @@
   "bugs": {
     "url": "https://github.com/dkulp23/02-build_automation_and_dependency_management/issues"
   },
-  "homepage": "https://github.com/dkulp23/02-build_automation_and_dependency_management#readme"
+  "homepage": "https://github.com/dkulp23/02-build_automation_and_dependency_management#readme",
+  "dependencies": {
+    "express": "^4.14.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^3.0.1",
+    "gulp-mocha": "^3.0.1",
+    "mocha": "^3.2.0"
+  }
 }
