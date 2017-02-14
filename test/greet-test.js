@@ -9,7 +9,6 @@ describe('Greet Module', function(){
       var output = greet.sayHey('Nikko');
       expect(output).to.equal('Hello Nikko, how\'s it going?');
       expect(output).to.be.a('string');
-      expect(greet.sayHey()).to.be.an('error');
     });
   });
   describe('#sayBye', function() {
