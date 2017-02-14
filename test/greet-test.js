@@ -1,13 +1,14 @@
 'use strict';
 
-const greet = require('../lib/greet.js');
-const assert = require('assert');
+const Greet = require('../lib/greet.js');
+const expect = require('chai').expect;
 
 describe('Greet Module Test', function(){
   describe('#greet', function() {
     it('should return hello remi', function() {
-      var arg = greet.greet('remi');
-      assert.ok(arg === 'hello remi', 'not equal to hello remi');
+      var result = Greet.greet('remi');
+      expect(Greet).to.have.property('greet');
+      expect(result).to.equal('hello remi');
     });
   });
 });
