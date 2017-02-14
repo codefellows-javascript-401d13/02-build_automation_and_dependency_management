@@ -1,18 +1,18 @@
 'use strict';
 
 const sayHey = require('../lib/greetings.js');
-const assert = require('assert');
+const expect = require('chai').expect;
 
 describe('Greet Module', function() {
-  describe('#greet', function() {
+  describe('#sayHey', function() {
     it('should return hey Bob!', function() {
       var result = sayHey.greet('Bob');
-      assert.ok(result === 'hey Bob!', 'does not equal hey Bob!');
+      expect(sayHey).to.have.property('greet');
+      expect(result).to.equal('hey Bob!');
     });
     it('should throw an error if no name provided', function() {
-      assert.throws(function() {
-        sayHey.greet();
-      }, 'error not thrown');
+      var result = sayHey.greet;
+      expect(result).to.throw(Error);
     });
   });
 });
