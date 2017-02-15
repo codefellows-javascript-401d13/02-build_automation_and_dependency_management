@@ -2,8 +2,6 @@
 
 const howdy = require('../lib/howdy.js');
 const expect = require('chai').expect;
-// const hackyMessageVariable = howdy.multipleGreetings.logMessage;
-// console.log(hackyMessageVariable);
 
 describe('Howdy Module', function() {
   describe('#greeting', function() {
@@ -28,7 +26,6 @@ describe('Howdy Module', function() {
       expect(howdy).to.respondTo('multipleGreetings');
       let printout = howdy.multipleGreetings(process.argv);
       expect(printout).to.be.a('string');
-      // assert.ok(printout === `Hey there ${hackyMessageVariable}`, 'not quite right');
       expect(printout).to.match(/^[a-zA-Z,!\s]+/);
     });
   });
