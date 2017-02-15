@@ -8,13 +8,13 @@ module.exports = exports = {};
 exports.sayHey = function(name){
 
   // if no args, throw exception
-  if(arguments.length === 0) throw new Exception('name not provided');
+  if(arguments.length === 0) throw new Error('name not provided');
 
   // otherwise, return name
   return `What's up ${name}?`;
-}
+};
 
 // Adds another method
 exports.sayBye = function(){
   return 'Goodbye.';
-}
+};
