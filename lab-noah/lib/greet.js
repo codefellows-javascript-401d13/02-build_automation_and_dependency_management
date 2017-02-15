@@ -9,4 +9,4 @@ exports.sayHey = function(name){
 
 exports.sayBye = function() {
   return 'see ya later';
-}
+};

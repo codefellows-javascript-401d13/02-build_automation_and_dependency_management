@@ -7,8 +7,8 @@ describe('Greet Module', function(){
   describe('#sayHey',function(){
     it('should return hey noah',function(){
       var result = greet.sayHey('noah');
-      expect(greet).to.have.property('sayHey')
-      expect(result).to.equal('hey noah')
+      expect(greet).to.have.property('sayHey');
+      expect(result).to.equal('hey noah');
     });
     it('should have a missing name error message', function(){
       var result = greet.sayHey;
