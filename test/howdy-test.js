@@ -10,6 +10,9 @@ describe('Howdy Module', function() {
     it(`should return hello ${process.argv[2]}`, function() {
       let printout = howdy.greeting(process.argv[2]);
       expect(howdy).to.have.property('greeting');
+      expect(howdy).to.be.extensible;
+      expect(howdy).to.not.be.sealed;
+      expect(howdy).to.not.be.frozen;
       expect(printout).to.match(/^[a-zA-Z,!\s]+/);
       expect(printout).to.eql(`hello ${process.argv[2]}`);
     });
@@ -22,6 +25,7 @@ describe('Howdy Module', function() {
 
   describe('#multipleGreetings', function() {
     it('should return all names entered in command line', function() {
+      expect(howdy).to.respondTo('multipleGreetings');
       let printout = howdy.multipleGreetings(process.argv);
       // assert.ok(printout === `Hey there ${hackyMessageVariable}`, 'not quite right');
       expect(printout).to.match(/^[a-zA-Z,!\s]+/);
