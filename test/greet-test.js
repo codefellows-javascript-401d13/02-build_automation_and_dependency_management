@@ -3,7 +3,7 @@
 const greet = require('../lib/greet.js');
 const expect = require('chai').expect;
 
-describe('Great Module', function() {
+describe('Greet Module', function() {
   describe('#sayHey', function() {
     it('should be returning Hey Shiv!', function() {
       var result = greet.sayHey('Shiv');
@@ -17,12 +17,8 @@ describe('Great Module', function() {
   });
     describe('#sayBye', function() {
       it('should return see ya later!', function() {
-        var result = greet.sayBye;
+        var result = greet.sayBye();
         expect(result).to.equal('see ya later!');
-      });
-      it('should return a wrongful parameter error', function() {
-        var result = greet.sayBye('Shiv');
-        expect(result).to.throw(Error);
-      })
-    })
+    });
   });
+});
