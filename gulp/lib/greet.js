@@ -3,7 +3,7 @@
 module.exports = exports = {};
 
 exports.sayHey = function(name) {
-  if (arguments.lenght === 0) throw new Error('name not provided');
+  if (arguments.length === 0) throw new Error('name not provided');
   return `hey ${name}`;
 };
 

@@ -10,14 +10,14 @@ gulp.task('test', function(){
 });
 
 gulp.task('lint', function()  {
-  return gulp.src(['**/*.js', '!node_modules'])
+  return gulp.src(['./**/*.js', '!node_modules'])
   .pipe(eslint())
   .pipe(eslint.format())
   .pipe(eslint.failAfterError());
 });
 
   gulp.task('dev', function() {
-  gulp.watch(['**/*.js', '!node_modules/**'], ['lint', 'test']);
+  gulp.watch(['./**/*.js', '!node_modules/**'], ['lint', 'test']);
 });
 
 gulp.task('default', ['dev']);
